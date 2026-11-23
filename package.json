@@ -1,0 +1,30 @@
+{
+    "name": "aergia-vscode",
+    "displayName": "Aergia",
+    "description": "VSCode language support for the Aergia programming language.",
+    "version": "0.1.0",
+    "publisher": "las-r",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/las-r/aergia-vscode"
+    },
+    "engines": { "vscode": "^1.146.0" },
+    "categories": ["Programming Languages"],
+    "contributes": {
+        "languages": [
+            {
+                "id": "aergia",
+                "aliases": ["Aergia", "aergia"],
+                "extensions": [".aer"],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "aergia",
+                "scopeName": "source.aergia",
+                "path": "./syntaxes/aergia.tmLanguage.json"
+            }
+        ]
+    }
+}
