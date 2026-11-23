@@ -1,6 +1,5 @@
 {
     "comments": { "lineComment": { "comment": "\\" } },
-    "autoClosingPairs": [],
     "surroundingPairs": [
         ["\"", "\""],
         [":", ":"]
