@@ -41,7 +41,7 @@
         },
         "function-params": {
             "begin": "\\{",
-            "end": ":",
+            "end": ";",
             "beginCaptures": { "0": { "name": "storage.type.function.aergia" } },
             "endCaptures": { "0": { "name": "punctuation.terminator.params.aergia" } },
             "patterns": [
@@ -52,7 +52,7 @@
                 },
                 {
                     "name": "invalid.illegal.param.aergia",
-                    "match": "[^\\s:]"
+                    "match": "[^\\s;]"
                 }
             ]
         },
@@ -65,7 +65,7 @@
         },
         "self-reference": {
             "name": "variable.language.self.aergia",
-            "match": ";"
+            "match": ":"
         },
         "control": {
             "patterns": [
