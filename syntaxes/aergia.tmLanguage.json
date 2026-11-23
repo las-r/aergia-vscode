@@ -40,24 +40,23 @@
             "match": "\\b\\d+(?:\\.\\d+)?\\b"
         },
         "function-params": {
-            "comment": "{:a b c: body}",
-            "begin": "(\\{)(:)",
+            "begin": "\\{",
             "end": ":",
-            "beginCaptures": {
-                "1": { "name": "storage.type.function.aergia" },
-                "2": { "name": "punctuation.separator.params.aergia" }
-            },
-            "endCaptures": { "0": { "name": "punctuation.separator.params.aergia" } },
+            "beginCaptures": { "0": { "name": "storage.type.function.aergia" } },
+            "endCaptures": { "0": { "name": "punctuation.terminator.params.aergia" } },
             "patterns": [
                 { "include": "#comment" },
                 {
                     "name": "variable.parameter.aergia",
                     "match": "[a-zA-Z][a-zA-Z0-9]*"
+                },
+                {
+                    "name": "invalid.illegal.param.aergia",
+                    "match": "[^\\s:]"
                 }
             ]
         },
         "assignment": {
-            "comment": "= name value  /  =. map key value",
             "match": "(=\\.|=)\\s*([a-zA-Z][a-zA-Z0-9]*)",
             "captures": {
                 "1": { "name": "keyword.operator.assignment.aergia" },
@@ -84,14 +83,14 @@
             "patterns": [
                 {
                     "name": "storage.type.function.aergia",
-                    "match": "[{}]"
+                    "match": "\\}"
                 },
                 {
                     "name": "keyword.other.call.aergia",
                     "match": "@"
                 },
                 {
-                    "name": "punctuation.separator.args.aergia",
+                    "name": "punctuation.terminator.args.aergia",
                     "match": ":"
                 }
             ]

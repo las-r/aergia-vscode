@@ -1,9 +1,6 @@
 {
     "comments": { "lineComment": { "comment": "\\" } },
-    "surroundingPairs": [
-        ["\"", "\""],
-        [":", ":"]
-    ],
+    "surroundingPairs": [["\"", "\""]],
     "wordPattern": "[a-zA-Z][a-zA-Z0-9]*",
     "indentationRules": {
         "increaseIndentPattern": "[\\{\\[\\(]\\s*(\\\\.*)?$",
