@@ -1,5 +1,5 @@
 # aergia-vscode
-A VSCode extension adding syntax highlighting for [Aergia](https://github.com/las-r/aergia).
+A VSCode extension adding syntax highlighting for [Aergia v2](https://github.com/las-r/aergia).
 
 ## Installation
 1. Download the latest `.vsix` file from the [Releases](https://github.com/las-r/aergia-vscode/releases) page.
